@@ -1,0 +1,8 @@
+<ul class="list-group">
+   <% doses.each do |dose| %>
+  <li class="list-group-item">
+    <%= "#{dose.description} de #{dose.ingredient.name}" %>
+    <%= link_to "Delete", dose_path(dose.id), data: {:confirm => 'Are you sure?'}, :method => :delete %>
+  </li>
+  <% end %>
+</ul>

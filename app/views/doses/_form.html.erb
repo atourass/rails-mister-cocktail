@@ -1,0 +1,6 @@
+<%= simple_form_for(dose) do |f| %>
+  <%= f.association :ingredient %>
+  <%= f.input :description, label: 'Quantity'%>
+  <%= f.button :submit, class: "btn-primary" %>
+<% end %>
+
